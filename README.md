@@ -1,6 +1,9 @@
 #RestClient 
 ------------------------------------------------------------------------------------------------------
-REST client for PHP, Allows a php server to make requests to other domains (Cross Site)   /  Cliente REST para PHP, Permite desde un servidor php hacer peticiones a otros dominios (CrossSite)
+REST client for PHP, Allows a php server to make requests to other domains (Cross Site)   
+
+Cliente REST para PHP, Permite desde un servidor php hacer peticiones a otros dominios (CrossSite)
+
 Version: 3.0
 Programmer: Eidy Estupiñan Varona <eidyev@gmail.com>
 Requirements: PHP CURL Extension  php-curl
