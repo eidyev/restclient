@@ -16,7 +16,7 @@ class RestClient
         private $timeout = 10;                                //Time Out     //Tiempo de espera para la conexión
         private $cookieFileLocation;                          //Cookie FIle  //Fichero de Cookies para en caso del que el sitio las cree 
         private $referer = null;                              //Referrer     //Indica quien refirió para hacer la petición
-	    private $verificSSL = false;
+	private $verificSSL = false;
         private $validSSL = null;
         private $error = null;
         
@@ -76,10 +76,10 @@ class RestClient
     //Execute request            //Función para ejecutar la petición   
     public function execute()
     {
-		//curl sesion init
-		$curlhandle = curl_init();
+	//curl sesion init
+	$curlhandle = curl_init();
         
-		try
+	try
         {
             switch (strtoupper($this->request_method))
             {
@@ -172,7 +172,7 @@ class RestClient
          curl_close($curlHandle);
     }
 	
-	//Set CURL Options           //Establecer parametros al CURL
+    //Set CURL Options           //Establecer parámetros al CURL
     private function setCurlOpts(&$curlHandle)
     {
         curl_setopt($curlHandle, CURLOPT_USERAGENT,$this->useragent);
@@ -227,8 +227,8 @@ class RestClient
         }
     }
     
-	//Getters and Setters functions               //Funciones para obtención y seteo de atributos
-	//------------------------------------------------------------------------------------------------------------------------------------
+   //Getters and Setters functions               //Funciones para obtención y seteo de atributos
+   //------------------------------------------------------------------------------------------------------------------------------------
     public function getUseragent() {
         return $this->useragent;
     }
@@ -395,7 +395,7 @@ class RestClient
         return json_decode($this->response_data);
     }
 	
-	//Function Execute and Explain, use only for test and diagnostic            //Funcion para ejecutar y ver salida detalla, usar para prueba y diagnóstico
+    //Function Execute and Explain, use only for test and diagnostic            //Funcion para ejecutar y ver salida detalla, usar para prueba y diagnóstico
     public function executeAndExplain() 
     {
        $this->execute();
