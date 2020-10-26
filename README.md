@@ -5,7 +5,9 @@ REST client for PHP, Allows a php server to make requests to other domains (Cros
 Cliente REST para PHP, Permite desde un servidor php hacer peticiones a otros dominios (CrossSite)
 
 Version: 3.0
+
 Programmer: Eidy Estupiñan Varona <eidyev@gmail.com>
+
 Requirements: PHP CURL Extension  php-curl
 
 (English) How to use
