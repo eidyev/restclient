@@ -22,9 +22,9 @@ class RestClient
         
     //Request atributes            //Atributos de la petición 
     //-------------------------------------------------------------------------------------------------------
-        private $request_url = '';                            //Request URL     	     //URL a la cual se hará la petiión
-        private $request_port = null;                         //Request Port    	     //Puerto detino en casod e que se use otro
-        private $request_method = 'GET';                      //Request Method  	     //Método a usar en las peticiones GET,POST,PUT,DELETE
+        private $request_url = '';                            //Request URL            //URL a la cual se hará la petiión
+        private $request_port = null;                         //Request Port           //Puerto detino en casod e que se use otro
+        private $request_method = 'GET';                      //Request Method         //Método a usar en las peticiones GET,POST,PUT,DELETE
         private $request_parameters = null;                   //Request parameters     //listado de parametros en la peticion
         private $request_length = 0;                          //Request length         //longitud de la lista de parametros de la petición
         private $request_accept_type = 'application/json';    //Request Accept Type    //Typo de contenido que se esperará en el resultado
@@ -59,7 +59,7 @@ class RestClient
         if (file_exists($file2))
            unlink($file2);        
         $this->cookieFileLocation = $file;
-        $this->useragent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0';
+        $this->useragent = 'REST-Client-3.0';
     }
     
     //Function for build string of request parameters         //Función para conformar la cadena de consulta con los parametros de la petición
