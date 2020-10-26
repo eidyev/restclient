@@ -1,5 +1,4 @@
-# restclient
-RestClient 
+#RestClient 
 ------------------------------------------------------------------------------------------------------
 REST client for PHP, Allows a php server to make requests to other domains (Cross Site)   /  Cliente REST para PHP, Permite desde un servidor php hacer peticiones a otros dominios (CrossSite)
 Version: 3.0
