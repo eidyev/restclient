@@ -1,4 +1,4 @@
-#RestClient 
+#PHP RestClient 
 ------------------------------------------------------------------------------------------------------
 REST client for PHP, Allows a php server to make requests to other domains (Cross Site)   
 
@@ -69,13 +69,13 @@ Requirements: PHP CURL Extension  php-curl
 	$restclient->set.... 
 	   
 	//Efectuando la petición
-    $clienterest->execute(); 
+    	$clienterest->execute(); 
 	   
 	//Acediendo a la respuesta
 	$respuesta = $clienterest->getResponse_data();	
       
 	//En caso de la respuesta ser un json se puede objener el dato directamente llamando a la función
-    $respuesta = $clienterest->getResponse_data_json_decode();
+    	$respuesta = $clienterest->getResponse_data_json_decode();
 	
 	
 	un ejemplo completo
